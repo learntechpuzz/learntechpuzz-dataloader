@@ -1,0 +1,12 @@
+ID,CourseID,Tag,FileName
+1,1,Linux basic commands,Linux_Basic_Commands.pdf
+2,1,AWS IAM create admin user,AWS_IAM_CreateAdminUser.pdf
+3,1,AWS IAM create s3 read only user,AWS_IAM_CreateS3User.pdf
+4,1,AWS EC2 launch ubuntu machine,AWS_EC2_Launch_Ubuntu.pdf
+5,1,AWS EC2 install apache2,AWS_EC2_Install_Apache2.pdf
+6,1,AWS EC2 install apache2 using user data,AWS_EC2_Install_Apache2_User_Data.pdf
+7,1,AWS EC2 create AMI image,AWS_EC2_Create_Image.pdf
+8,1,AWS S3 static website hosting,AWS_S3_Website.pdf
+9,1,AWS Lambda Function ,AWS_Lambda_Function.pdf
+10,1,AWS Dynamo DB,AWS_Dynamo_DB.pdf
+11,1,AWS VPC,AWS_VPC.pdf

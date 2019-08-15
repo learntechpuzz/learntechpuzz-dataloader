@@ -1,0 +1,5 @@
+CourseID,Title,Summary,Logo_FileName,About,CourseContents_FileName
+1,Ultimate AWS Certified Solutions Architect Associate,Complete AWS Certified Solutions Architect Associate Training,AWSCloud.png,"Pass the AWS Certified Solutions Architect Associate Certification. 
+Perform Real-World Solution Architecture on AWS.
+Learn AWS Fundamentals (EC2, ELB, ASG, RDS, ElastiCache, S3).
+Learn Serverless Fundamentals (Lambda, DynamoDB, Cognito, API Gateway)",AWSCourseContents.pdf
