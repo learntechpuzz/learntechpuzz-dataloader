@@ -1,48 +1,26 @@
 package com.learntechpuzz.lambda.models;
 
-import java.io.Serializable;
+import com.opencsv.bean.CsvBindByName;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+public class CsvCourse {
 
-@DynamoDBTable(tableName = "Courses")
-public class Course implements Serializable {
-
-	private static final long serialVersionUID = 1L;
-
-	@DynamoDBHashKey(attributeName = "CourseID")
+	@CsvBindByName(column = "CourseID", required = true)
 	private int courseId;
 
-	@DynamoDBAttribute(attributeName = "Title")
+	@CsvBindByName(column = "Title", required = true)
 	private String title;
 
-	@DynamoDBAttribute(attributeName = "Summary")
+	@CsvBindByName(column = "Summary", required = true)
 	private String summary;
 
-	@DynamoDBAttribute(attributeName = "Logo_FileName")
+	@CsvBindByName(column = "Logo_FileName", required = true)
 	private String logoFileName;
 
-	@DynamoDBAttribute(attributeName = "About")
+	@CsvBindByName(column = "About", required = true)
 	private String about;
-
-	@DynamoDBAttribute(attributeName = "CourseContents_FileName")
+	
+	@CsvBindByName(column = "CourseContents_FileName", required = true)
 	private String courseContentsFileName;
-
-	public Course() {
-		super();
-	}
-
-	public Course(int courseId, String title, String summary, String logoFileName, String about,
-			String courseContentsFileName) {
-		super();
-		this.courseId = courseId;
-		this.title = title;
-		this.summary = summary;
-		this.logoFileName = logoFileName;
-		this.about = about;
-		this.courseContentsFileName = courseContentsFileName;
-	}
 
 	public int getCourseId() {
 		return courseId;
@@ -97,5 +75,6 @@ public class Course implements Serializable {
 		return "Course [courseId=" + courseId + ", title=" + title + ", summary=" + summary + ", logoFileName="
 				+ logoFileName + ", about=" + about + ", courseContentsFileName=" + courseContentsFileName + "]";
 	}
-
+	
+	
 }
